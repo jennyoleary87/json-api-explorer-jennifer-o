@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
     <title>API Interaction Project</title>
-
 </head>
+
 <body>
     <h1>JSON API Explorer</h1>
-    
+
     <section>
         <h2>Create New Post</h2>
         <form id="postForm">
@@ -29,10 +31,16 @@
     <section>
         <h2>Posts</h2>
         <button id="fetchButton">Fetch Posts</button>
+        <div id="postList">
+            <div id="loadingMessage">
+                <div class="spinner"></div>
+                Loading posts...
+            </div>
+        </div>
         <div id="error"></div>
-        <div id="postList"></div>
     </section>
 
     <script src="script.js"></script>
 </body>
+
 </html>
